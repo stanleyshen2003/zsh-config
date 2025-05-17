@@ -5,6 +5,8 @@ wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/Ne
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf &&
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
 
+mkdir -p fonts
+mv *.ttf fonts
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -25,6 +27,3 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 EOF
-
-source ~/.zshrc
-
